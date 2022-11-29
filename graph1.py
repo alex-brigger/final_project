@@ -11,7 +11,7 @@ def frame1():
 
 def plot1(frame):
     plt.xlabel('Energy Types')
-    plt.title('Total Uses of Energy Sources from 2001-2022')
+    plt.title('Total Uses of Each Energy Source from 2001-2022')
     plt.ylabel('Number of Occurences')
     frame.plot.bar()
 
@@ -19,6 +19,7 @@ def plot1(frame):
 def main():
     graph_frame = frame1()
     plot1(graph_frame)
+    plt.show()
     
 if __name__ == "__main__":
     main()
