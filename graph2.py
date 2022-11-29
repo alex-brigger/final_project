@@ -19,6 +19,5 @@ def main():
     graph_frame2 = frame2()
     plot2(graph_frame2)
     plt.show()
-    
 if __name__ == "__main__":
     main()

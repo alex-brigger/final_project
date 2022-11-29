@@ -20,6 +20,5 @@ def main():
     graph_frame = frame1()
     plot1(graph_frame)
     plt.show()
-    
 if __name__ == "__main__":
     main()
