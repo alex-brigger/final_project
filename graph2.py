@@ -13,7 +13,7 @@ def frame2():
 def plot2(frame2):
     frame2.plot.bar(color = "blue")
     plt.xlabel('States')
-    plt.title('Top 5 Energy Producing States in 2021')
+    plt.title(('Top 5 Energy Producing States in 2021'), fontsize = 24)
     plt.ylabel('Megawatt Hours Produced (MwH)')
     plt.legend().remove()
 

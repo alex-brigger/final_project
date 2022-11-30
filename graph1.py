@@ -13,7 +13,7 @@ def frame1():
 def plot1(frame):
     frame.plot.bar(color = "Yellow")
     plt.xlabel('Energy Types')
-    plt.title('Total Uses of Each Energy Source from 2001-2022')
+    plt.title(('Total Uses of Each Energy Source from 2001-2022'), fontsize = 24)
     plt.ylabel('Number of Occurences')
     plt.yticks(np.arange(0, 100000, step=20000))
     plt.tight_layout()
