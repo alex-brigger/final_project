@@ -17,13 +17,13 @@ def plot3():
     years = np.array(range(2001,2022))
     frame_run = frame3()
     production = np.array(frame_run["GENERATION (Megawatthours)"])
-    plt.scatter(years, production, label = 'Total Generation Per Year')
-    plt.ylabel(("Fossil Fuel Usage"),fontsize = 20)
+    plt.scatter(years, production, label = 'Total Generation Per Year', color="green")
+    plt.ylabel("Fossil Fuel Usage in Megawatt Hours")
     plt.xlabel("Year")
     plt.title("Total Power Production Of Fossil Fuels Each Year")
+    plt.xticks(np.arange(2001, 20021, step=2))
     a, b = np.polyfit(years, production, 1)
-    plt.plot(years, a*years+b)        
-    plt.show()
+    plt.plot(years, a*years+b, color= "red")        
 
 
 def main():
